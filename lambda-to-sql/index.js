@@ -1,5 +1,5 @@
 /*
-*  KBS - Connection to S3 bucket to grab file to load encrypted connection for queries
+*  Example: Connection to S3 bucket to grab file to load encrypted connection string and then run queries against a SQL Server
 */
 
 var sql = require('mssql');

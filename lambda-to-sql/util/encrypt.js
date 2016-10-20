@@ -1,5 +1,5 @@
 /*
-*  KBS - Encrypt utility for sql connection data.
+*  Example: Encrypt utility for sql connection data.
 *   
 *  Load sql.txt locally.  Generates credential files (private key/encrypted sql connection)
 */
