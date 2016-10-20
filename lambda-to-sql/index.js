@@ -1,33 +1,51 @@
+/*
+*  KBS - Connection to S3 bucket to grab file to load encrypted connection for queries
+*/
+
 var sql = require('mssql');
+var async = require('async');
 var NodeRSA = require('node-rsa');
-var fs = require('fs');
+var aws = require('aws-sdk');
 
-loadData = function() {
+loadData = function(result) {
 
-    var connDecrypt;
+    var s3 = new aws.S3();
+    var params = {
+        Bucket: "dfrey-sql",
+        Key: "key.txt"
+    };
+    /* load key from S3 */
+    s3.getObject(params, function(err, keyData) {
+        if(err) {
+            console.log(err);
+        } else {
+            params.Key = "sql.txt";
 
-    fs.readFile("credential/key.txt", 'utf8', function(err, data) {
-        console.log(data);
-        var key = new NodeRSA();
-        key.importKey(data);
-        fs.readFile("credential/sql.txt", "utf8", function(err, connEncrypt) {            
-            connDecrypt = key.decrypt(connEncrypt, "utf8");
+            /* load encrypted connection from S3 */            
+            s3.getObject(params, function(err, data) {
+                if(err) {
+                    console.log(err);
+                } else {
 
-            console.log(connDecrypt);
-        });
-             
-        
-        // console.log(conn);
-        /*
-        new sql.Request().query('select * from mytable')
-                    .then(function(recordset) {
-                            console.dir(recordset);
+                    /* decrypt connection for SQL connection */
+                    var key = new NodeRSA();
+                    key.importKey(keyData.Body.toString());                    
+                    sql.connect(key.decrypt(data.Body.toString(), "utf8")).then(function() {                                       
+                    
+                    /* get data from SQL server */
+                    new sql.Request().query('select * from [Website].[Customers]')
+                            .then(function(recordset) {
+                                console.log(recordset);
+                            }).catch(function(err) {
+                                console.log(err);
+                            });                 
                     }).catch(function(err) {
-                        // potentially console the error
-                    });
-        */    
-    });
+                        console.log(err);            
+                    });                                    
+                }
+            });
+        }
+    });           
 }
 
 loadData();
-
