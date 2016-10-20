@@ -29,11 +29,12 @@ loadData = function(result) {
 
                     /* decrypt connection for SQL connection */
                     var key = new NodeRSA();
-                    key.importKey(keyData.Body.toString());                    
-                    sql.connect(key.decrypt(data.Body.toString(), "utf8")).then(function() {                                       
+                    key.importKey(keyData.Body.toString());    
+                    console.log(key.decrypt(data.Body.toString(), "utf8"));     
+                    // sql.connect(key.decrypt(data.Body.toString(), "utf8")).then(function() {                                       
                     
                     /* get data from SQL server */
-                    new sql.Request().query('select * from [Website].[Customers]')
+                    /*new sql.Request().query('select * from [Website].[Customers] Where [CustomerId] = 6')
                             .then(function(recordset) {
                                 console.log(recordset);
                             }).catch(function(err) {
@@ -41,7 +42,7 @@ loadData = function(result) {
                             });                 
                     }).catch(function(err) {
                         console.log(err);            
-                    });                                    
+                    });*/                                    
                 }
             });
         }

@@ -1,0 +1,12 @@
+Z:\work\aws\koch-demo\SQS-Example\Worker-Three\Worker-Three\obj\Debug\Worker-zThree.csprojResolveAssemblyReference.cache
+Z:\work\aws\koch-demo\SQS-Example\Worker-Three\Worker-Three\obj\Debug\Worker-Three.exe
+Z:\work\aws\koch-demo\SQS-Example\Worker-Three\Worker-Three\obj\Debug\Worker-Three.pdb
+Z:\work\aws\koch-demo\SQS-Example\Worker-Three\Worker-Three\bin\Debug\Worker-Three.exe.config
+Z:\work\aws\koch-demo\SQS-Example\Worker-Three\Worker-Three\bin\Debug\Worker-Three.exe
+Z:\work\aws\koch-demo\SQS-Example\Worker-Three\Worker-Three\bin\Debug\Worker-Three.pdb
+Z:\work\aws\koch-demo\SQS-Example\Worker-Three\Worker-Three\bin\Debug\AWSSDK.Core.dll
+Z:\work\aws\koch-demo\SQS-Example\Worker-Three\Worker-Three\bin\Debug\AWSSDK.SQS.dll
+Z:\work\aws\koch-demo\SQS-Example\Worker-Three\Worker-Three\bin\Debug\AWSSDK.Core.pdb
+Z:\work\aws\koch-demo\SQS-Example\Worker-Three\Worker-Three\bin\Debug\AWSSDK.Core.xml
+Z:\work\aws\koch-demo\SQS-Example\Worker-Three\Worker-Three\bin\Debug\AWSSDK.SQS.pdb
+Z:\work\aws\koch-demo\SQS-Example\Worker-Three\Worker-Three\bin\Debug\AWSSDK.SQS.xml

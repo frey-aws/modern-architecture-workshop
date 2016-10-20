@@ -1,0 +1,12 @@
+Z:\work\aws\koch-demo\ConsoleApplication1\obj\Debug\Worker-Two.csprojResolveAssemblyReference.cache
+Z:\work\aws\koch-demo\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+Z:\work\aws\koch-demo\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+Z:\work\aws\koch-demo\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+Z:\work\aws\koch-demo\ConsoleApplication1\bin\Debug\AWSSDK.Core.dll
+Z:\work\aws\koch-demo\ConsoleApplication1\bin\Debug\AWSSDK.SQS.dll
+Z:\work\aws\koch-demo\ConsoleApplication1\bin\Debug\AWSSDK.Core.pdb
+Z:\work\aws\koch-demo\ConsoleApplication1\bin\Debug\AWSSDK.Core.xml
+Z:\work\aws\koch-demo\ConsoleApplication1\bin\Debug\AWSSDK.SQS.pdb
+Z:\work\aws\koch-demo\ConsoleApplication1\bin\Debug\AWSSDK.SQS.xml
+Z:\work\aws\koch-demo\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+Z:\work\aws\koch-demo\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
