@@ -1,0 +1,750 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'ursa' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.1
+4 verbose install initial load of Z:\work\aws\koch-demo\lambda-to-sql\package.json
+5 warn package.json lambda-to-sql@1.0.0 No README data
+6 verbose installManyTop reading scoped package data from Z:\work\aws\koch-demo\lambda-to-sql\node_modules\fs\package.json
+7 verbose installManyTop reading scoped package data from Z:\work\aws\koch-demo\lambda-to-sql\node_modules\mssql\package.json
+8 verbose installManyTop reading scoped package data from Z:\work\aws\koch-demo\lambda-to-sql\node_modules\node-rsa\package.json
+9 info package.json fs@0.0.1-security fs is also the name of a node core module.
+10 verbose readDependencies loading dependencies from Z:\work\aws\koch-demo\lambda-to-sql\package.json
+11 silly cache add args [ 'ursa', null ]
+12 verbose cache add spec ursa
+13 silly cache add parsed spec Result {
+13 silly cache add   raw: 'ursa',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'ursa',
+13 silly cache add   rawSpec: '',
+13 silly cache add   spec: 'latest',
+13 silly cache add   type: 'tag' }
+14 silly addNamed ursa@latest
+15 verbose addNamed "latest" is being treated as a dist-tag for ursa
+16 info addNameTag [ 'ursa', 'latest' ]
+17 silly mapToRegistry name ursa
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry data Result {
+20 silly mapToRegistry   raw: 'ursa',
+20 silly mapToRegistry   scope: null,
+20 silly mapToRegistry   name: 'ursa',
+20 silly mapToRegistry   rawSpec: '',
+20 silly mapToRegistry   spec: 'latest',
+20 silly mapToRegistry   type: 'tag' }
+21 silly mapToRegistry uri https://registry.npmjs.org/ursa
+22 verbose addNameTag registry:https://registry.npmjs.org/ursa not in flight; fetching
+23 verbose request uri https://registry.npmjs.org/ursa
+24 verbose request no auth needed
+25 info attempt registry request try #1 at 11:12:39 PM
+26 verbose request id de78e2a60521a0f2
+27 http request GET https://registry.npmjs.org/ursa
+28 http 200 https://registry.npmjs.org/ursa
+29 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 verbose headers   etag: '"EJYWIGKEGUKYQDTONW69R7BDE"',
+29 verbose headers   'content-type': 'application/json',
+29 verbose headers   'content-encoding': 'gzip',
+29 verbose headers   'cache-control': 'max-age=300',
+29 verbose headers   'content-length': '11865',
+29 verbose headers   'accept-ranges': 'bytes',
+29 verbose headers   date: 'Thu, 20 Oct 2016 03:12:41 GMT',
+29 verbose headers   via: '1.1 varnish',
+29 verbose headers   age: '237',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'x-served-by': 'cache-dfw1841-DFW',
+29 verbose headers   'x-cache': 'HIT',
+29 verbose headers   'x-cache-hits': '1',
+29 verbose headers   'x-timer': 'S1476933161.910525,VS0,VE0',
+29 verbose headers   vary: 'Accept-Encoding' }
+30 silly get cb [ 200,
+30 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 silly get     etag: '"EJYWIGKEGUKYQDTONW69R7BDE"',
+30 silly get     'content-type': 'application/json',
+30 silly get     'content-encoding': 'gzip',
+30 silly get     'cache-control': 'max-age=300',
+30 silly get     'content-length': '11865',
+30 silly get     'accept-ranges': 'bytes',
+30 silly get     date: 'Thu, 20 Oct 2016 03:12:41 GMT',
+30 silly get     via: '1.1 varnish',
+30 silly get     age: '237',
+30 silly get     connection: 'keep-alive',
+30 silly get     'x-served-by': 'cache-dfw1841-DFW',
+30 silly get     'x-cache': 'HIT',
+30 silly get     'x-cache-hits': '1',
+30 silly get     'x-timer': 'S1476933161.910525,VS0,VE0',
+30 silly get     vary: 'Accept-Encoding' } ]
+31 verbose get saving ursa to C:\Users\Dennis\AppData\Roaming\npm-cache\registry.npmjs.org\ursa\.cache.json
+32 verbose correctMkdir C:\Users\Dennis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+33 silly addNameTag next cb for ursa with tag latest
+34 silly addNamed ursa@0.9.4
+35 verbose addNamed "0.9.4" is a plain semver version for ursa
+36 silly mapToRegistry name ursa
+37 silly mapToRegistry using default registry
+38 silly mapToRegistry registry https://registry.npmjs.org/
+39 silly mapToRegistry data Result {
+39 silly mapToRegistry   raw: 'ursa',
+39 silly mapToRegistry   scope: null,
+39 silly mapToRegistry   name: 'ursa',
+39 silly mapToRegistry   rawSpec: '',
+39 silly mapToRegistry   spec: 'latest',
+39 silly mapToRegistry   type: 'tag' }
+40 silly mapToRegistry uri https://registry.npmjs.org/ursa
+41 verbose addRemoteTarball https://registry.npmjs.org/ursa/-/ursa-0.9.4.tgz not in flight; adding
+42 verbose addRemoteTarball [ 'https://registry.npmjs.org/ursa/-/ursa-0.9.4.tgz',
+42 verbose addRemoteTarball   '0a2abfb7dc4267f733b0f8f2fc7f2c895d40a413' ]
+43 info retry fetch attempt 1 at 11:12:39 PM
+44 info attempt registry request try #1 at 11:12:39 PM
+45 http fetch GET https://registry.npmjs.org/ursa/-/ursa-0.9.4.tgz
+46 http fetch 200 https://registry.npmjs.org/ursa/-/ursa-0.9.4.tgz
+47 silly fetchAndShaCheck shasum 0a2abfb7dc4267f733b0f8f2fc7f2c895d40a413
+48 verbose addTmpTarball C:\Users\Dennis\AppData\Local\Temp\npm-6336-9ffb192e\registry.npmjs.org\ursa\-\ursa-0.9.4.tgz not in flight; adding
+49 verbose addTmpTarball already have metadata; skipping unpack for ursa@0.9.4
+50 verbose correctMkdir C:\Users\Dennis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+51 silly cache afterAdd ursa@0.9.4
+52 verbose afterAdd C:\Users\Dennis\AppData\Roaming\npm-cache\ursa\0.9.4\package\package.json not in flight; writing
+53 verbose correctMkdir C:\Users\Dennis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+54 verbose afterAdd C:\Users\Dennis\AppData\Roaming\npm-cache\ursa\0.9.4\package\package.json written
+55 silly install resolved [ { name: 'ursa',
+55 silly install resolved     version: '0.9.4',
+55 silly install resolved     keywords:
+55 silly install resolved      [ 'crypto',
+55 silly install resolved        'key',
+55 silly install resolved        'openssl',
+55 silly install resolved        'private',
+55 silly install resolved        'public',
+55 silly install resolved        'rsa',
+55 silly install resolved        'sign',
+55 silly install resolved        'signature',
+55 silly install resolved        'verify',
+55 silly install resolved        'verification',
+55 silly install resolved        'hash',
+55 silly install resolved        'digest' ],
+55 silly install resolved     description: 'RSA public/private key OpenSSL bindings for node and io.js',
+55 silly install resolved     homepage: 'https://github.com/quartzjer/ursa',
+55 silly install resolved     repository:
+55 silly install resolved      { type: 'git',
+55 silly install resolved        url: 'git+https://github.com/quartzjer/ursa.git' },
+55 silly install resolved     license: 'Apache-2.0',
+55 silly install resolved     author:
+55 silly install resolved      { name: 'Dan Bornstein',
+55 silly install resolved        email: 'danfuzz@milk.com',
+55 silly install resolved        url: 'http://www.milk.com/' },
+55 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+55 silly install resolved     main: 'lib/ursa.js',
+55 silly install resolved     engines: { node: '>=0.10.0' },
+55 silly install resolved     scripts: { test: 'node test/test.js', install: 'node-gyp rebuild' },
+55 silly install resolved     dependencies: { bindings: '^1.2.1', nan: '^2.3.3' },
+55 silly install resolved     gypfile: true,
+55 silly install resolved     gitHead: '216ad542b6722c560d24555b4ea0a76051654e6c',
+55 silly install resolved     bugs: { url: 'https://github.com/quartzjer/ursa/issues' },
+55 silly install resolved     _id: 'ursa@0.9.4',
+55 silly install resolved     _shasum: '0a2abfb7dc4267f733b0f8f2fc7f2c895d40a413',
+55 silly install resolved     _from: 'ursa@latest',
+55 silly install resolved     _npmVersion: '3.8.6',
+55 silly install resolved     _nodeVersion: '6.0.0',
+55 silly install resolved     _npmUser: { name: 'quartzjer', email: 'jeremie@jabber.org' },
+55 silly install resolved     dist:
+55 silly install resolved      { shasum: '0a2abfb7dc4267f733b0f8f2fc7f2c895d40a413',
+55 silly install resolved        tarball: 'https://registry.npmjs.org/ursa/-/ursa-0.9.4.tgz' },
+55 silly install resolved     _npmOperationalInternal:
+55 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+55 silly install resolved        tmp: 'tmp/ursa-0.9.4.tgz_1462840564075_0.891536823939532' },
+55 silly install resolved     directories: {},
+55 silly install resolved     _resolved: 'https://registry.npmjs.org/ursa/-/ursa-0.9.4.tgz' } ]
+56 info install ursa@0.9.4 into Z:\work\aws\koch-demo\lambda-to-sql
+57 info installOne ursa@0.9.4
+58 verbose installOne of ursa to Z:\work\aws\koch-demo\lambda-to-sql not in flight; installing
+59 verbose correctMkdir C:\Users\Dennis\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+60 verbose lock using C:\Users\Dennis\AppData\Roaming\npm-cache\_locks\ursa-895d1b3fa968fa8b.lock for Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa
+61 silly install write writing ursa 0.9.4 to Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa
+62 verbose unbuild node_modules\ursa
+63 silly gentlyRm Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa is being purged from base Z:\work\aws\koch-demo\lambda-to-sql
+64 verbose gentlyRm don't care about contents; nuking Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa
+65 verbose tar unpack C:\Users\Dennis\AppData\Roaming\npm-cache\ursa\0.9.4\package.tgz
+66 verbose tar unpacking to Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa
+67 silly gentlyRm Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa is being purged
+68 verbose gentlyRm don't care about contents; nuking Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa
+69 silly gunzTarPerm modes [ '777', '666' ]
+70 silly gunzTarPerm extractEntry package.json
+71 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+72 silly gunzTarPerm extractEntry .npmignore
+73 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+74 silly gunzTarPerm extractEntry README.md
+75 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+76 silly gunzTarPerm extractEntry binding.gyp
+77 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+78 silly gunzTarPerm extractEntry .travis.yml
+79 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+80 silly gunzTarPerm extractEntry lib/ursa.js
+81 silly gunzTarPerm modified mode [ 'lib/ursa.js', 420, 438 ]
+82 silly gunzTarPerm extractEntry src/ursaNative.cc
+83 silly gunzTarPerm modified mode [ 'src/ursaNative.cc', 420, 438 ]
+84 silly gunzTarPerm extractEntry src/ursaNative.h
+85 silly gunzTarPerm modified mode [ 'src/ursaNative.h', 420, 438 ]
+86 silly gunzTarPerm extractEntry LICENSE.txt
+87 silly gunzTarPerm modified mode [ 'LICENSE.txt', 420, 438 ]
+88 silly gunzTarPerm extractEntry test/fixture.js
+89 silly gunzTarPerm modified mode [ 'test/fixture.js', 420, 438 ]
+90 silly gunzTarPerm extractEntry test/native.js
+91 silly gunzTarPerm modified mode [ 'test/native.js', 420, 438 ]
+92 silly gunzTarPerm extractEntry test/test.js
+93 silly gunzTarPerm modified mode [ 'test/test.js', 420, 438 ]
+94 silly gunzTarPerm extractEntry test/blort.pub
+95 silly gunzTarPerm modified mode [ 'test/blort.pub', 420, 438 ]
+96 silly gunzTarPerm extractEntry test/blort.sshpub
+97 silly gunzTarPerm modified mode [ 'test/blort.sshpub', 420, 438 ]
+98 silly gunzTarPerm extractEntry test/blort-pass.pem
+99 silly gunzTarPerm modified mode [ 'test/blort-pass.pem', 420, 438 ]
+100 silly gunzTarPerm extractEntry test/another_zorch.pem
+101 silly gunzTarPerm modified mode [ 'test/another_zorch.pem', 420, 438 ]
+102 silly gunzTarPerm extractEntry test/pss_tv.pub
+103 silly gunzTarPerm modified mode [ 'test/pss_tv.pub', 420, 438 ]
+104 silly gunzTarPerm extractEntry test/blort.pem
+105 silly gunzTarPerm modified mode [ 'test/blort.pem', 420, 438 ]
+106 silly gunzTarPerm extractEntry test/zorch.pem
+107 silly gunzTarPerm modified mode [ 'test/zorch.pem', 420, 438 ]
+108 silly gunzTarPerm extractEntry test/zorch.pub
+109 silly gunzTarPerm modified mode [ 'test/zorch.pub', 420, 438 ]
+110 verbose write writing to Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\package.json
+111 info preinstall ursa@0.9.4
+112 verbose readDependencies loading dependencies from Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\package.json
+113 silly prepareForInstallMany adding bindings@^1.2.1 from ursa dependencies
+114 silly prepareForInstallMany adding nan@^2.3.3 from ursa dependencies
+115 verbose readDependencies loading dependencies from Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\package.json
+116 silly cache add args [ 'bindings@^1.2.1', null ]
+117 verbose cache add spec bindings@^1.2.1
+118 silly cache add args [ 'nan@^2.3.3', null ]
+119 verbose cache add spec nan@^2.3.3
+120 silly cache add parsed spec Result {
+120 silly cache add   raw: 'bindings@^1.2.1',
+120 silly cache add   scope: null,
+120 silly cache add   name: 'bindings',
+120 silly cache add   rawSpec: '^1.2.1',
+120 silly cache add   spec: '>=1.2.1 <2.0.0',
+120 silly cache add   type: 'range' }
+121 silly addNamed bindings@>=1.2.1 <2.0.0
+122 verbose addNamed ">=1.2.1 <2.0.0" is a valid semver range for bindings
+123 silly addNameRange { name: 'bindings', range: '>=1.2.1 <2.0.0', hasData: false }
+124 silly mapToRegistry name bindings
+125 silly mapToRegistry using default registry
+126 silly mapToRegistry registry https://registry.npmjs.org/
+127 silly mapToRegistry data Result {
+127 silly mapToRegistry   raw: 'bindings',
+127 silly mapToRegistry   scope: null,
+127 silly mapToRegistry   name: 'bindings',
+127 silly mapToRegistry   rawSpec: '',
+127 silly mapToRegistry   spec: 'latest',
+127 silly mapToRegistry   type: 'tag' }
+128 silly mapToRegistry uri https://registry.npmjs.org/bindings
+129 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
+130 silly cache add parsed spec Result {
+130 silly cache add   raw: 'nan@^2.3.3',
+130 silly cache add   scope: null,
+130 silly cache add   name: 'nan',
+130 silly cache add   rawSpec: '^2.3.3',
+130 silly cache add   spec: '>=2.3.3 <3.0.0',
+130 silly cache add   type: 'range' }
+131 silly addNamed nan@>=2.3.3 <3.0.0
+132 verbose addNamed ">=2.3.3 <3.0.0" is a valid semver range for nan
+133 silly addNameRange { name: 'nan', range: '>=2.3.3 <3.0.0', hasData: false }
+134 silly mapToRegistry name nan
+135 silly mapToRegistry using default registry
+136 silly mapToRegistry registry https://registry.npmjs.org/
+137 silly mapToRegistry data Result {
+137 silly mapToRegistry   raw: 'nan',
+137 silly mapToRegistry   scope: null,
+137 silly mapToRegistry   name: 'nan',
+137 silly mapToRegistry   rawSpec: '',
+137 silly mapToRegistry   spec: 'latest',
+137 silly mapToRegistry   type: 'tag' }
+138 silly mapToRegistry uri https://registry.npmjs.org/nan
+139 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+140 verbose request uri https://registry.npmjs.org/bindings
+141 verbose request no auth needed
+142 info attempt registry request try #1 at 11:12:40 PM
+143 http request GET https://registry.npmjs.org/bindings
+144 verbose request uri https://registry.npmjs.org/nan
+145 verbose request no auth needed
+146 info attempt registry request try #1 at 11:12:40 PM
+147 http request GET https://registry.npmjs.org/nan
+148 http 200 https://registry.npmjs.org/bindings
+149 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+149 verbose headers   etag: '"8QW29MHCPCE6VJCVI3QVXRJAQ"',
+149 verbose headers   'content-type': 'application/json',
+149 verbose headers   'content-encoding': 'gzip',
+149 verbose headers   'cache-control': 'max-age=300',
+149 verbose headers   'content-length': '3832',
+149 verbose headers   'accept-ranges': 'bytes',
+149 verbose headers   date: 'Thu, 20 Oct 2016 03:12:42 GMT',
+149 verbose headers   via: '1.1 varnish',
+149 verbose headers   age: '117',
+149 verbose headers   connection: 'keep-alive',
+149 verbose headers   'x-served-by': 'cache-dfw1841-DFW',
+149 verbose headers   'x-cache': 'HIT',
+149 verbose headers   'x-cache-hits': '2',
+149 verbose headers   'x-timer': 'S1476933162.282733,VS0,VE0',
+149 verbose headers   vary: 'Accept-Encoding' }
+150 silly get cb [ 200,
+150 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+150 silly get     etag: '"8QW29MHCPCE6VJCVI3QVXRJAQ"',
+150 silly get     'content-type': 'application/json',
+150 silly get     'content-encoding': 'gzip',
+150 silly get     'cache-control': 'max-age=300',
+150 silly get     'content-length': '3832',
+150 silly get     'accept-ranges': 'bytes',
+150 silly get     date: 'Thu, 20 Oct 2016 03:12:42 GMT',
+150 silly get     via: '1.1 varnish',
+150 silly get     age: '117',
+150 silly get     connection: 'keep-alive',
+150 silly get     'x-served-by': 'cache-dfw1841-DFW',
+150 silly get     'x-cache': 'HIT',
+150 silly get     'x-cache-hits': '2',
+150 silly get     'x-timer': 'S1476933162.282733,VS0,VE0',
+150 silly get     vary: 'Accept-Encoding' } ]
+151 verbose get saving bindings to C:\Users\Dennis\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
+152 verbose correctMkdir C:\Users\Dennis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+153 silly addNameRange number 2 { name: 'bindings', range: '>=1.2.1 <2.0.0', hasData: true }
+154 silly addNameRange versions [ 'bindings',
+154 silly addNameRange   [ '0.0.1',
+154 silly addNameRange     '0.1.0',
+154 silly addNameRange     '0.1.1',
+154 silly addNameRange     '0.2.0',
+154 silly addNameRange     '0.2.1',
+154 silly addNameRange     '0.2.2',
+154 silly addNameRange     '0.2.3',
+154 silly addNameRange     '0.2.4',
+154 silly addNameRange     '0.3.0',
+154 silly addNameRange     '0.4.0',
+154 silly addNameRange     '1.0.0',
+154 silly addNameRange     '1.1.0',
+154 silly addNameRange     '1.1.1',
+154 silly addNameRange     '1.2.0',
+154 silly addNameRange     '1.2.1' ] ]
+155 silly addNamed bindings@1.2.1
+156 verbose addNamed "1.2.1" is a plain semver version for bindings
+157 silly mapToRegistry name bindings
+158 silly mapToRegistry using default registry
+159 silly mapToRegistry registry https://registry.npmjs.org/
+160 silly mapToRegistry data Result {
+160 silly mapToRegistry   raw: 'bindings',
+160 silly mapToRegistry   scope: null,
+160 silly mapToRegistry   name: 'bindings',
+160 silly mapToRegistry   rawSpec: '',
+160 silly mapToRegistry   spec: 'latest',
+160 silly mapToRegistry   type: 'tag' }
+161 silly mapToRegistry uri https://registry.npmjs.org/bindings
+162 verbose addRemoteTarball https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz not in flight; adding
+163 verbose addRemoteTarball [ 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+163 verbose addRemoteTarball   '14ad6113812d2d37d72e67b4cacb4bb726505f11' ]
+164 info retry fetch attempt 1 at 11:12:40 PM
+165 info attempt registry request try #1 at 11:12:40 PM
+166 http fetch GET https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz
+167 http fetch 200 https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz
+168 silly fetchAndShaCheck shasum 14ad6113812d2d37d72e67b4cacb4bb726505f11
+169 verbose addTmpTarball C:\Users\Dennis\AppData\Local\Temp\npm-6336-9ffb192e\registry.npmjs.org\bindings\-\bindings-1.2.1.tgz not in flight; adding
+170 verbose addTmpTarball already have metadata; skipping unpack for bindings@1.2.1
+171 verbose correctMkdir C:\Users\Dennis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+172 silly cache afterAdd bindings@1.2.1
+173 verbose afterAdd C:\Users\Dennis\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json not in flight; writing
+174 verbose correctMkdir C:\Users\Dennis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+175 verbose afterAdd C:\Users\Dennis\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json written
+176 http 200 https://registry.npmjs.org/nan
+177 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+177 verbose headers   etag: '"2QXFPVXUU9DUUTAACVV4FOU2Z"',
+177 verbose headers   'content-type': 'application/json',
+177 verbose headers   'content-encoding': 'gzip',
+177 verbose headers   'cache-control': 'max-age=300',
+177 verbose headers   'content-length': '17179',
+177 verbose headers   'accept-ranges': 'bytes',
+177 verbose headers   date: 'Thu, 20 Oct 2016 03:12:42 GMT',
+177 verbose headers   via: '1.1 varnish',
+177 verbose headers   age: '265',
+177 verbose headers   connection: 'keep-alive',
+177 verbose headers   'x-served-by': 'cache-dfw1843-DFW',
+177 verbose headers   'x-cache': 'HIT',
+177 verbose headers   'x-cache-hits': '4',
+177 verbose headers   'x-timer': 'S1476933162.380321,VS0,VE0',
+177 verbose headers   vary: 'Accept-Encoding' }
+178 silly get cb [ 200,
+178 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+178 silly get     etag: '"2QXFPVXUU9DUUTAACVV4FOU2Z"',
+178 silly get     'content-type': 'application/json',
+178 silly get     'content-encoding': 'gzip',
+178 silly get     'cache-control': 'max-age=300',
+178 silly get     'content-length': '17179',
+178 silly get     'accept-ranges': 'bytes',
+178 silly get     date: 'Thu, 20 Oct 2016 03:12:42 GMT',
+178 silly get     via: '1.1 varnish',
+178 silly get     age: '265',
+178 silly get     connection: 'keep-alive',
+178 silly get     'x-served-by': 'cache-dfw1843-DFW',
+178 silly get     'x-cache': 'HIT',
+178 silly get     'x-cache-hits': '4',
+178 silly get     'x-timer': 'S1476933162.380321,VS0,VE0',
+178 silly get     vary: 'Accept-Encoding' } ]
+179 verbose get saving nan to C:\Users\Dennis\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+180 verbose correctMkdir C:\Users\Dennis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+181 silly addNameRange number 2 { name: 'nan', range: '>=2.3.3 <3.0.0', hasData: true }
+182 silly addNameRange versions [ 'nan',
+182 silly addNameRange   [ '0.3.0-wip',
+182 silly addNameRange     '0.3.0-wip2',
+182 silly addNameRange     '0.3.0',
+182 silly addNameRange     '0.3.1',
+182 silly addNameRange     '0.3.2',
+182 silly addNameRange     '0.4.0',
+182 silly addNameRange     '0.4.1',
+182 silly addNameRange     '0.4.2',
+182 silly addNameRange     '0.4.3',
+182 silly addNameRange     '0.4.4',
+182 silly addNameRange     '0.5.0',
+182 silly addNameRange     '0.5.1',
+182 silly addNameRange     '0.5.2',
+182 silly addNameRange     '0.6.0',
+182 silly addNameRange     '0.7.0',
+182 silly addNameRange     '0.7.1',
+182 silly addNameRange     '0.8.0',
+182 silly addNameRange     '1.0.0',
+182 silly addNameRange     '1.1.0',
+182 silly addNameRange     '1.1.1',
+182 silly addNameRange     '1.1.2',
+182 silly addNameRange     '1.2.0',
+182 silly addNameRange     '1.3.0',
+182 silly addNameRange     '1.4.0',
+182 silly addNameRange     '1.4.1',
+182 silly addNameRange     '1.5.0',
+182 silly addNameRange     '1.4.2',
+182 silly addNameRange     '1.4.3',
+182 silly addNameRange     '1.5.1',
+182 silly addNameRange     '1.5.2',
+182 silly addNameRange     '1.6.0',
+182 silly addNameRange     '1.5.3',
+182 silly addNameRange     '1.6.1',
+182 silly addNameRange     '1.6.2',
+182 silly addNameRange     '1.7.0',
+182 silly addNameRange     '1.8.0',
+182 silly addNameRange     '1.8.1',
+182 silly addNameRange     '1.8.2',
+182 silly addNameRange     '1.8.3',
+182 silly addNameRange     '1.8.4',
+182 silly addNameRange     '1.9.0',
+182 silly addNameRange     '2.0.0',
+182 silly addNameRange     '2.0.1',
+182 silly addNameRange     '2.0.2',
+182 silly addNameRange     '2.0.3',
+182 silly addNameRange     '2.0.4',
+182 silly addNameRange     '2.0.5',
+182 silly addNameRange     '2.0.6',
+182 silly addNameRange     '2.0.7',
+182 silly addNameRange     '2.0.8',
+182 silly addNameRange     '2.0.9',
+182 silly addNameRange     '2.1.0',
+182 silly addNameRange     '2.2.0',
+182 silly addNameRange     '2.2.1',
+182 silly addNameRange     '2.3.0',
+182 silly addNameRange     '2.3.1',
+182 silly addNameRange     '2.3.2',
+182 silly addNameRange     '2.3.3',
+182 silly addNameRange     '2.3.4',
+182 silly addNameRange     '2.3.5',
+182 silly addNameRange     '2.4.0' ] ]
+183 silly addNamed nan@2.4.0
+184 verbose addNamed "2.4.0" is a plain semver version for nan
+185 silly mapToRegistry name nan
+186 silly mapToRegistry using default registry
+187 silly mapToRegistry registry https://registry.npmjs.org/
+188 silly mapToRegistry data Result {
+188 silly mapToRegistry   raw: 'nan',
+188 silly mapToRegistry   scope: null,
+188 silly mapToRegistry   name: 'nan',
+188 silly mapToRegistry   rawSpec: '',
+188 silly mapToRegistry   spec: 'latest',
+188 silly mapToRegistry   type: 'tag' }
+189 silly mapToRegistry uri https://registry.npmjs.org/nan
+190 verbose addRemoteTarball https://registry.npmjs.org/nan/-/nan-2.4.0.tgz not in flight; adding
+191 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-2.4.0.tgz',
+191 verbose addRemoteTarball   'fb3c59d45fe4effe215f0b890f8adf6eb32d2232' ]
+192 info retry fetch attempt 1 at 11:12:40 PM
+193 info attempt registry request try #1 at 11:12:40 PM
+194 http fetch GET https://registry.npmjs.org/nan/-/nan-2.4.0.tgz
+195 http fetch 200 https://registry.npmjs.org/nan/-/nan-2.4.0.tgz
+196 silly fetchAndShaCheck shasum fb3c59d45fe4effe215f0b890f8adf6eb32d2232
+197 verbose addTmpTarball C:\Users\Dennis\AppData\Local\Temp\npm-6336-9ffb192e\registry.npmjs.org\nan\-\nan-2.4.0.tgz not in flight; adding
+198 verbose addTmpTarball already have metadata; skipping unpack for nan@2.4.0
+199 verbose correctMkdir C:\Users\Dennis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+200 silly cache afterAdd nan@2.4.0
+201 verbose afterAdd C:\Users\Dennis\AppData\Roaming\npm-cache\nan\2.4.0\package\package.json not in flight; writing
+202 verbose correctMkdir C:\Users\Dennis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+203 verbose afterAdd C:\Users\Dennis\AppData\Roaming\npm-cache\nan\2.4.0\package\package.json written
+204 silly install resolved [ { name: 'bindings',
+204 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+204 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+204 silly install resolved     version: '1.2.1',
+204 silly install resolved     author:
+204 silly install resolved      { name: 'Nathan Rajlich',
+204 silly install resolved        email: 'nathan@tootallnate.net',
+204 silly install resolved        url: 'http://tootallnate.net' },
+204 silly install resolved     repository:
+204 silly install resolved      { type: 'git',
+204 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+204 silly install resolved     main: './bindings.js',
+204 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+204 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+204 silly install resolved     license: 'MIT',
+204 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+204 silly install resolved     _id: 'bindings@1.2.1',
+204 silly install resolved     scripts: {},
+204 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+204 silly install resolved     _from: 'bindings@>=1.2.1 <2.0.0',
+204 silly install resolved     _npmVersion: '1.4.14',
+204 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+204 silly install resolved     maintainers: [ [Object], [Object] ],
+204 silly install resolved     dist:
+204 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+204 silly install resolved        tarball: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+204 silly install resolved     directories: {},
+204 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+204 silly install resolved   { name: 'nan',
+204 silly install resolved     version: '2.4.0',
+204 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 6 compatibility',
+204 silly install resolved     main: 'include_dirs.js',
+204 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+204 silly install resolved     scripts:
+204 silly install resolved      { test: 'tap --gc --stderr test/js/*-test.js',
+204 silly install resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2013 --directory test',
+204 silly install resolved        docs: 'doc/.build.sh' },
+204 silly install resolved     contributors:
+204 silly install resolved      [ [Object],
+204 silly install resolved        [Object],
+204 silly install resolved        [Object],
+204 silly install resolved        [Object],
+204 silly install resolved        [Object],
+204 silly install resolved        [Object],
+204 silly install resolved        [Object] ],
+204 silly install resolved     devDependencies:
+204 silly install resolved      { bindings: '~1.2.1',
+204 silly install resolved        commander: '^2.8.1',
+204 silly install resolved        glob: '^5.0.14',
+204 silly install resolved        'node-gyp': '~3.0.1',
+204 silly install resolved        'readable-stream': '^2.1.4',
+204 silly install resolved        tap: '~0.7.1',
+204 silly install resolved        xtend: '~4.0.0' },
+204 silly install resolved     license: 'MIT',
+204 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+204 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+204 silly install resolved     _id: 'nan@2.4.0',
+204 silly install resolved     _shasum: 'fb3c59d45fe4effe215f0b890f8adf6eb32d2232',
+204 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.4.0.tgz',
+204 silly install resolved     _from: 'nan@>=2.3.3 <3.0.0',
+204 silly install resolved     _npmVersion: '3.3.6',
+204 silly install resolved     _nodeVersion: '5.0.0',
+204 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+204 silly install resolved     dist:
+204 silly install resolved      { shasum: 'fb3c59d45fe4effe215f0b890f8adf6eb32d2232',
+204 silly install resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-2.4.0.tgz' },
+204 silly install resolved     maintainers: [ [Object], [Object] ],
+204 silly install resolved     _npmOperationalInternal:
+204 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+204 silly install resolved        tmp: 'tmp/nan-2.4.0.tgz_1468158679820_0.6951719264034182' },
+204 silly install resolved     directories: {} } ]
+205 info install bindings@1.2.1 into Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa
+206 info install nan@2.4.0 into Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa
+207 info installOne bindings@1.2.1
+208 verbose installOne of bindings to Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa not in flight; installing
+209 verbose correctMkdir C:\Users\Dennis\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+210 info installOne nan@2.4.0
+211 verbose installOne of nan to Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa not in flight; installing
+212 verbose correctMkdir C:\Users\Dennis\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+213 verbose lock using C:\Users\Dennis\AppData\Roaming\npm-cache\_locks\nan-b697261794de5b72.lock for Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\nan
+214 verbose lock using C:\Users\Dennis\AppData\Roaming\npm-cache\_locks\bindings-329926f4fc423d92.lock for Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\bindings
+215 silly install write writing nan 2.4.0 to Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\nan
+216 silly install write writing bindings 1.2.1 to Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\bindings
+217 verbose unbuild node_modules\ursa\node_modules\nan
+218 verbose unbuild node_modules\ursa\node_modules\bindings
+219 silly gentlyRm Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\nan is being purged from base Z:\work\aws\koch-demo\lambda-to-sql
+220 verbose gentlyRm don't care about contents; nuking Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\nan
+221 silly gentlyRm Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\bindings is being purged from base Z:\work\aws\koch-demo\lambda-to-sql
+222 verbose gentlyRm don't care about contents; nuking Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\bindings
+223 verbose tar unpack C:\Users\Dennis\AppData\Roaming\npm-cache\nan\2.4.0\package.tgz
+224 verbose tar unpacking to Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\nan
+225 silly gentlyRm Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\nan is being purged
+226 verbose gentlyRm don't care about contents; nuking Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\nan
+227 verbose tar unpack C:\Users\Dennis\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+228 verbose tar unpacking to Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\bindings
+229 silly gentlyRm Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\bindings is being purged
+230 verbose gentlyRm don't care about contents; nuking Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\bindings
+231 silly gunzTarPerm modes [ '777', '666' ]
+232 silly gunzTarPerm modes [ '777', '666' ]
+233 silly gunzTarPerm extractEntry package.json
+234 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+235 silly gunzTarPerm extractEntry package.json
+236 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+237 silly gunzTarPerm extractEntry README.md
+238 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+239 silly gunzTarPerm extractEntry bindings.js
+240 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+241 silly gunzTarPerm extractEntry README.md
+242 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+243 silly gunzTarPerm extractEntry include_dirs.js
+244 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+245 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+246 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+247 silly gunzTarPerm extractEntry CHANGELOG.md
+248 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+249 silly gunzTarPerm extractEntry LICENSE.md
+250 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+251 silly gunzTarPerm extractEntry doc/node_misc.md
+252 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
+253 silly gunzTarPerm extractEntry doc/asyncworker.md
+254 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
+255 silly gunzTarPerm extractEntry doc/callback.md
+256 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
+257 verbose write writing to Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\bindings\package.json
+258 silly gunzTarPerm extractEntry doc/converters.md
+259 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
+260 silly gunzTarPerm extractEntry doc/errors.md
+261 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
+262 info preinstall bindings@1.2.1
+263 verbose readDependencies loading dependencies from Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\bindings\package.json
+264 silly gunzTarPerm extractEntry doc/maybe_types.md
+265 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+266 silly gunzTarPerm extractEntry doc/methods.md
+267 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+268 verbose readDependencies loading dependencies from Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\bindings\package.json
+269 silly gunzTarPerm extractEntry doc/new.md
+270 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
+271 silly gunzTarPerm extractEntry doc/buffers.md
+272 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
+273 silly install resolved []
+274 verbose about to build Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\bindings
+275 info build Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\bindings
+276 info linkStuff bindings@1.2.1
+277 silly linkStuff bindings@1.2.1 has Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules as its parent node_modules
+278 silly gunzTarPerm extractEntry doc/object_wrappers.md
+279 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 438 ]
+280 silly gunzTarPerm extractEntry doc/persistent.md
+281 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
+282 verbose linkBins bindings@1.2.1
+283 verbose linkMans bindings@1.2.1
+284 verbose rebuildBundles bindings@1.2.1
+285 info install bindings@1.2.1
+286 info postinstall bindings@1.2.1
+287 verbose unlock done using C:\Users\Dennis\AppData\Roaming\npm-cache\_locks\bindings-329926f4fc423d92.lock for Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\bindings
+288 silly gunzTarPerm extractEntry doc/scopes.md
+289 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
+290 silly gunzTarPerm extractEntry doc/script.md
+291 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
+292 silly gunzTarPerm extractEntry doc/string_bytes.md
+293 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
+294 silly gunzTarPerm extractEntry doc/v8_internals.md
+295 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
+296 silly gunzTarPerm extractEntry doc/v8_misc.md
+297 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
+298 silly gunzTarPerm extractEntry nan.h
+299 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+300 silly gunzTarPerm extractEntry nan_callbacks.h
+301 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
+302 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+303 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
+304 silly gunzTarPerm extractEntry nan_converters.h
+305 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
+306 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+307 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
+308 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+309 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
+310 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+311 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+312 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+313 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+314 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+315 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
+316 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+317 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
+318 silly gunzTarPerm extractEntry nan_new.h
+319 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+320 silly gunzTarPerm extractEntry nan_object_wrap.h
+321 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
+322 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+323 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
+324 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+325 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
+326 silly gunzTarPerm extractEntry nan_string_bytes.h
+327 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+328 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+329 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 438 ]
+330 silly gunzTarPerm extractEntry nan_weak.h
+331 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
+332 silly gunzTarPerm extractEntry tools/package.json
+333 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
+334 silly gunzTarPerm extractEntry tools/README.md
+335 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
+336 silly gunzTarPerm extractEntry tools/1to2.js
+337 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
+338 verbose write writing to Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\nan\package.json
+339 info preinstall nan@2.4.0
+340 verbose readDependencies loading dependencies from Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\nan\package.json
+341 verbose readDependencies loading dependencies from Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\nan\package.json
+342 silly install resolved []
+343 verbose about to build Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\nan
+344 info build Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\nan
+345 info linkStuff nan@2.4.0
+346 silly linkStuff nan@2.4.0 has Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules as its parent node_modules
+347 verbose linkBins nan@2.4.0
+348 verbose linkMans nan@2.4.0
+349 verbose rebuildBundles nan@2.4.0
+350 info install nan@2.4.0
+351 info postinstall nan@2.4.0
+352 verbose unlock done using C:\Users\Dennis\AppData\Roaming\npm-cache\_locks\nan-b697261794de5b72.lock for Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa\node_modules\nan
+353 verbose about to build Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa
+354 info build Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa
+355 info linkStuff ursa@0.9.4
+356 silly linkStuff ursa@0.9.4 has Z:\work\aws\koch-demo\lambda-to-sql\node_modules as its parent node_modules
+357 verbose linkBins ursa@0.9.4
+358 verbose linkMans ursa@0.9.4
+359 verbose rebuildBundles ursa@0.9.4
+360 verbose rebuildBundles [ 'bindings', 'nan' ]
+361 info install ursa@0.9.4
+362 verbose unsafe-perm in lifecycle true
+363 info ursa@0.9.4 Failed to exec install script
+364 verbose unlock done using C:\Users\Dennis\AppData\Roaming\npm-cache\_locks\ursa-895d1b3fa968fa8b.lock for Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa
+365 verbose stack Error: ursa@0.9.4 install: `node-gyp rebuild`
+365 verbose stack Exit status 1
+365 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:217:16)
+365 verbose stack     at emitTwo (events.js:87:13)
+365 verbose stack     at EventEmitter.emit (events.js:172:7)
+365 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+365 verbose stack     at emitTwo (events.js:87:13)
+365 verbose stack     at ChildProcess.emit (events.js:172:7)
+365 verbose stack     at maybeClose (internal/child_process.js:829:16)
+365 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+366 verbose pkgid ursa@0.9.4
+367 verbose cwd Z:\work\aws\koch-demo\lambda-to-sql
+368 error Windows_NT 10.0.14393
+369 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "ursa"
+370 error node v4.6.1
+371 error npm  v2.15.9
+372 error code ELIFECYCLE
+373 error ursa@0.9.4 install: `node-gyp rebuild`
+373 error Exit status 1
+374 error Failed at the ursa@0.9.4 install script 'node-gyp rebuild'.
+374 error This is most likely a problem with the ursa package,
+374 error not with npm itself.
+374 error Tell the author that this fails on your system:
+374 error     node-gyp rebuild
+374 error You can get information on how to open an issue for this project with:
+374 error     npm bugs ursa
+374 error Or if that isn't available, you can get their info via:
+374 error
+374 error     npm owner ls ursa
+374 error There is likely additional logging output above.
+375 verbose exit [ 1, true ]
+376 verbose unbuild node_modules\ursa
+377 info preuninstall ursa@0.9.4
+378 info uninstall ursa@0.9.4
+379 verbose unbuild rmStuff ursa@0.9.4 from Z:\work\aws\koch-demo\lambda-to-sql\node_modules
+380 info postuninstall ursa@0.9.4
+381 silly gentlyRm Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa is being purged from base Z:\work\aws\koch-demo\lambda-to-sql
+382 verbose gentlyRm don't care about contents; nuking Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa
+383 silly vacuum-fs purging Z:\work\aws\koch-demo\lambda-to-sql\node_modules\ursa
+384 silly vacuum-fs quitting because other entries in Z:\work\aws\koch-demo\lambda-to-sql\node_modules
