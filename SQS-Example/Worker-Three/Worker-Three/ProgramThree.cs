@@ -28,7 +28,7 @@ namespace Koch.WorkerThree
                     using (var client = new AmazonSQSClient(Amazon.RegionEndpoint.USEast1))
                     {
                         var receiveRequest = new ReceiveMessageRequest();
-                        receiveRequest.QueueUrl = "https://sqs.us-east-1.amazonaws.com/787803147655/ProcessTheData";
+                        receiveRequest.QueueUrl = "https://sqs.us-east-1.amazonaws.com/{ADDAWSACCOUNT}/ProcessTheData";
                         var response = client.ReceiveMessage(receiveRequest);
 
                         foreach (Message item in response.Messages)
@@ -68,7 +68,7 @@ namespace Koch.WorkerThree
                     client.SendMessage(new SendMessageRequest
                     {
                         // Create work for Subscribers
-                        QueueUrl = "https://sqs.us-east-1.amazonaws.com/787803147655/GetTheData",
+                        QueueUrl = "https://sqs.us-east-1.amazonaws.com/{ADDAWSACCOUNT}/GetTheData",
                         MessageBody = "Please go get the data again " + x++          // execution occurs upon receipt of message ... 
                     });
                 }

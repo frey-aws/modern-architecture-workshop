@@ -26,7 +26,7 @@ namespace Koch.WorkerOne
                     {
                         var receiveRequest = new ReceiveMessageRequest();
                         // listen to our queue, WorkForWorkerOne
-                        receiveRequest.QueueUrl = "https://sqs.us-east-1.amazonaws.com/787803147655/GetTheData";
+                        receiveRequest.QueueUrl = "https://sqs.us-east-1.amazonaws.com/{ADDAWSACCOUNT}/GetTheData";
                         var response = client.ReceiveMessage(receiveRequest);
 
                         foreach (Message item in response.Messages)
@@ -66,7 +66,7 @@ namespace Koch.WorkerOne
                     client.SendMessage(new SendMessageRequest
                     {
                         // Create work for Subscribers
-                        QueueUrl = "https://sqs.us-east-1.amazonaws.com/787803147655/ProcessTheData",
+                        QueueUrl = "https://sqs.us-east-1.amazonaws.com/{ADDAWSACCOUNT}/ProcessTheData",
                         MessageBody = "You need to process the data - " + x++          // execution occurs upon receipt of message ... 
                     });
                 }
