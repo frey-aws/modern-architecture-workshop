@@ -1,3 +1,9 @@
+/*
+*  KBS - Encrypt utility for sql connection data.
+*   
+*  Load sql.txt locally.  Generates credential files (private key/encrypted sql connection)
+*/
+
 var NodeRSA = require('node-rsa');
 var fs = require('fs');
 
